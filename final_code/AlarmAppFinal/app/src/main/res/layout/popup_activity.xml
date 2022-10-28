@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--교재 4강에 나오는 위젯들을 사용한다.(java파일과 연결도 한다.)-->
+<!--교재 5강에 나오는 LinearLayout을 이용한다.-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#eeeeee"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--<TextView
+            android:id="@+id/alarmTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:text="설정된 알람 시간이 여기에 표시됩니다."
+            android:layout_gravity="center" />-->
+
+    <TextView
+        android:id="@+id/alarmNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#6201EB"
+        android:padding="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="정확한 발음이 아니면 \n 3분 뒤 알람이 다시 울립니다."
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/sttResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="단어"
+        android:textColor="#4C4C4C"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ttsStart"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음성 듣기" />
+
+    <TextView
+        android:id="@+id/iptWord"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="90dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="인식된 단어"
+        android:textColor="#4C4C4C"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!--<
+         '인식된 단어'는 5글자 실제 인식된 단어는 5글자가 아니므로 중간을 맞추려고
+                 교재 5강 예제 5-3 에 나오는 android:gravity를 이용한다.
+             android:textAlignment="center"
+             android:gravity="center"추가
+         />-->
+
+    <Button
+        android:id="@+id/sttStart"
+        android:layout_width="187dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="음성인식 시작"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

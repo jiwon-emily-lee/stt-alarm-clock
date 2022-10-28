@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AlarmAppFinal</string>
+    <string-array name="random_Word">semifinal
+        <item>딸기</item>
+        <item>포도</item>
+        <item>사과</item>
+        <item>바나나</item>
+        <item>복숭아</item>
+        <item>수박</item>
+        <item>토마토</item>
+        <item>망고</item>
+        <item>키위</item>
+        <item>자두</item>
+        <item>유자</item>
+        <item>호두</item>
+    </string-array>
+</resources>
